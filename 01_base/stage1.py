@@ -39,4 +39,5 @@ except APIError as refused:
 # 4. Print the reply. The text is inside the response object.
 reply = response.choices[0].message.content
 print(reply)
+print(os.getenv("LLM_MODEL"))
 
